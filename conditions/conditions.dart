@@ -1,5 +1,5 @@
-void main() {
-  double marks = -60;
+void main(List args) {
+  double marks = 60;
 
   if (marks >= 0 && marks < 40) {
     print("FAIL");
@@ -34,7 +34,12 @@ sendEmail();
     print("ODD");
   }
 
-11%2==0? print("EVEN"): print("ODD");
+11%2==0? print("EVEN"): print("ODD"); // ternary operator ?:
+
+int b=100;
+String result22 = b%2==0? "EVEN": "ODD"; // ternary operator ?:
+print(result22);
+
 
 int abcd=11;
 String result="";
@@ -54,9 +59,10 @@ result=(abcd%2==0)? "EVEN": "ODD";
 
 String day="JAN";
 
- switch(day){
+ switch(day){  // ==
 
 case "MON":    print("MONDAY"); 
+   // 100 lines
 break; 
 
 case "TUE":    print("TUESDAY");  break;
@@ -70,17 +76,21 @@ default:    print("WRONG DAY of Week");
 
 
 double tax=0;
+double salary=double.parse(args[0]); // abc, DEF, 27262 ,"500000"
+ 
 // tax=salary-deducation;
 // tax=tax-donation;
 // tax=tax-ppf;
-if(tax<=500000){
-// some 100 line code to calculateTax
-}else{
-
-  // no tax
+if(salary<=500000){
+// no tax
+}else if(salary>500000 && salary<=1000000){
+salary=salary-50000;
 }
-print(tax);
+
+print(salary);
 
 }
+
+
 
 

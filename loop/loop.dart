@@ -1,4 +1,6 @@
-void main() {
+void main(List args) {
+
+  
   int i = 1;
   int N = 20;
 
@@ -8,15 +10,16 @@ void main() {
 // N + 1
   print("FINISH LOOP $i");
 
-  i = 1;
-
-  for (; i <= 10;) {
-    print(i);
-    int resul = i + 2;
-
-    i = resul + 1;
+  int i2 = int.parse(args[0]);
+// where the  i is cal above.
+  for (; i2 <= 10;) {
+    print(i2);
+    int resul = i2 + 2;
+    i2 = resul + 1;
   }
+ print("FINISH LOOP2 $i");
 
+ 
   print("LOOP2");
   N = 100;
   i = 1;
